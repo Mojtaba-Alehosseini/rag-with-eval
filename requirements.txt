@@ -1,0 +1,9 @@
+# Hugging Face Spaces installs these, then runs app.py.
+# Installs this package (light core deps) plus the Gradio + Gemini demo stack, so the
+# Space runs on free CPU. With no GEMINI_API_KEY secret it still works (offline
+# extractive answers + hashing embeddings); add the secret for LLM-generated answers.
+.[demo]
+
+# Optional: semantic embeddings on the Space (heavier, slower cold start).
+# Uncomment, then set RAG_EMBED_PROVIDER=sentence-transformers in the Space variables.
+# sentence-transformers>=3.0

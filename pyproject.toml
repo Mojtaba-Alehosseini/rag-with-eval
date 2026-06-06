@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-with-eval"
+version = "1.0.0"
+description = "RAG over documents with cited answers and a real evaluation harness (faithfulness / answer-relevancy / context-precision)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Mojtaba Alehoseini" }]
+keywords = ["rag", "retrieval", "llm", "evaluation", "ragas", "llama-index", "chromadb"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+]
+
+# Core dependencies are intentionally light: the whole pipeline + eval harness
+# run with ONLY these, using deterministic offline providers. The heavy "real"
+# stack (torch, llama-index, chromadb, ragas, ...) lives in optional extras and
+# is lazy-imported, so `pip install -e .` stays small and `pytest` is hermetic.
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "pypdf>=4.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+# Real retrieval/generation stack (CPU-friendly).
+heavy = [
+    "llama-index-core>=0.11",          # SentenceSplitter (the spec-mandated chunker)
+    "chromadb>=0.5",                   # persistent vector store
+    "sentence-transformers>=3.0",      # dense embeddings + cross-encoder reranker
+    "rank-bm25>=0.2.2",                # lexical retriever for hybrid search
+]
+# Evaluation with the RAGAS LLM-judge (configured to a LOCAL judge, never OpenAI).
+eval = [
+    "ragas>=0.2",
+    "datasets>=2.19",
+    "langchain-ollama>=0.2",           # ChatOllama / OllamaEmbeddings judge wrappers
+]
+# Hosted demo (HF Spaces free CPU can't run Ollama -> use Gemini free tier).
+demo = [
+    "gradio>=4.44",
+    "google-generativeai>=0.8",
+]
+# Local generation/embeddings via Ollama.
+ollama = [
+    "ollama>=0.3",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "types-PyYAML",
+]
+
+[project.scripts]
+rag = "rag.pipeline:main"
+
+[project.urls]
+Homepage = "https://github.com/mojtaba/rag-with-eval"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "data", ".rag_index"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = ["E501"]  # line length is enforced by the formatter, not the linter
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true   # heavy deps are optional + lazy-imported
+warn_unused_ignores = false
+files = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
