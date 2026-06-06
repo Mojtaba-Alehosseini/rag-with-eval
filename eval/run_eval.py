@@ -47,6 +47,7 @@ def _force_utf8_stdout() -> None:
 VARIANTS = {
     "base": {"reranker": "none", "hybrid": False},
     "reranked": {"reranker": "cross-encoder", "hybrid": False},
+    "reranked-lexical": {"reranker": "lexical", "hybrid": False},  # deterministic, no deps
     "hybrid": {"reranker": "none", "hybrid": True},
     "hybrid+rerank": {"reranker": "cross-encoder", "hybrid": True},
 }

@@ -69,16 +69,17 @@ reproducible in CI:
 
 | variant | context_precision | context_recall | faithfulness | answer_relevancy | refusal_acc |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| base | 0.861 | 0.905 | 1.000 | 0.382 | 1.000 |
-| &nbsp;&nbsp;+ reranked (lexical) | 0.897 | **1.000** | 1.000 | 0.362 | 1.000 |
-| &nbsp;&nbsp;+ hybrid (BM25) | 0.897 | **1.000** | 1.000 | 0.356 | 1.000 |
+| base | 0.861 | 0.905 | 1.000 | 0.427 | 1.000 |
+| &nbsp;&nbsp;+ reranked (lexical) | 0.893 | **1.000** | 1.000 | 0.412 | 1.000 |
+| &nbsp;&nbsp;+ hybrid (BM25) | 0.897 | **1.000** | 1.000 | 0.411 | 1.000 |
 
 **The upgrade helps here too, but less — and the *why* is the interesting part:** the offline
 embedder is itself **lexical** (a hashing bag-of-words), so a BM25-style reranker mostly
 improves **recall** (context-recall 0.905 → 1.000, recovering the answer chunk) rather than
-adding a new ranking signal — the precision gain is a modest +0.036. A cross-encoder over a
-*semantic* base adds genuinely new signal, so its precision gain (+0.107) is ~3× larger.
-Measuring is what lets you say *which* upgrade is worth its cost, and why.
+adding a new ranking signal — the precision gain is a modest +0.03–0.04. A cross-encoder over
+a *semantic* base adds genuinely new signal, so its precision gain (+0.107) is ~3× larger.
+Measuring is what lets you say *which* upgrade is worth its cost, and why. (These numbers are
+deterministic — re-running the harness reproduces them exactly.)
 
 > `faithfulness = 1.0` and `refusal_acc = 1.0` are real: the offline LLM is **extractive**
 > (so answers are grounded in context by construction) and every out-of-corpus question is

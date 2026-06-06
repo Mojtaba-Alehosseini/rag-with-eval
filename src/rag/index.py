@@ -76,9 +76,12 @@ class NumpyVectorStore(VectorStore):
         # Stored vectors are L2-normalised by the embedders, so dot == cosine.
         sims = self._emb @ q
         k = min(k, sims.shape[0])
-        top = np.argpartition(-sims, k - 1)[:k]
-        top = top[np.argsort(-sims[top])]
-        return [Retrieved(chunk=self._chunks[i], score=float(sims[i]), method="dense") for i in top]
+        # Deterministic top-k: rank by descending similarity, breaking ties by
+        # ascending index so results are reproducible across numpy versions.
+        order = np.lexsort((np.arange(sims.shape[0]), -sims))[:k]
+        return [
+            Retrieved(chunk=self._chunks[i], score=float(sims[i]), method="dense") for i in order
+        ]
 
     def all_chunks(self) -> list[Chunk]:
         return list(self._chunks)
