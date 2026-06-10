@@ -1,0 +1,5 @@
+| variant | context_precision | context_recall | faithfulness | answer_relevancy | answer_similarity | answer_rate | refusal_accuracy | guard_accuracy |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base | 0.861 | 0.905 | 1.0 | 0.427 | 0.331 | 1.0 | 1.0 | 1.0 |
+| reranked-lexical | 0.893 | 1.0 | 1.0 | 0.412 | 0.33 | 1.0 | 1.0 | 1.0 |
+| hybrid | 0.897 | 1.0 | 1.0 | 0.411 | 0.327 | 1.0 | 1.0 | 1.0 |

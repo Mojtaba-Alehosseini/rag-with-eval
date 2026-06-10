@@ -17,10 +17,9 @@ env/
 # Secrets
 .env
 
-# RAG index / model caches / eval artifacts
+# RAG index / model caches
 .rag_index/
 data/index/
-eval/results/
 *.npz
 
 # OS / editor

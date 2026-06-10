@@ -1,0 +1,4 @@
+,context_precision,context_recall,faithfulness,answer_relevancy,answer_similarity,answer_rate,refusal_accuracy,guard_accuracy
+base,0.873,0.952,1.0,0.658,0.54,1.0,1.0,1.0
+reranked,0.98,1.0,1.0,0.652,0.527,1.0,1.0,1.0
+hybrid,0.905,1.0,1.0,0.649,0.533,1.0,1.0,1.0

@@ -1,0 +1,1712 @@
+[
+  {
+    "variant": "base",
+    "question": "What two weaknesses of standalone language models does RAG address?",
+    "type": "factual",
+    "answered": true,
+    "answer": "RAG addresses two core weaknesses of standalone language models: stale knowledge and. [1]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 164.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8469792008399963,
+    "answer_similarity": 0.4863598644733429
+  },
+  {
+    "variant": "base",
+    "question": "What are the five stages of a RAG pipeline?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A RAG pipeline has five stages: load documents, split them into chunks, embed the. [1] Because the corpus can be updated independently of the model, RAG keeps. [4]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 133.3,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.769263744354248,
+    "answer_similarity": 0.4511662721633911
+  },
+  {
+    "variant": "base",
+    "question": "What is chunk overlap and why is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] Two parameters control chunking: chunk size and chunk overlap. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 95.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7872885465621948,
+    "answer_similarity": 0.737905740737915
+  },
+  {
+    "variant": "base",
+    "question": "What chunk size and overlap are a common starting point?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] A common starting point is a chunk size of 1024. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "01_what_is_rag.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 91.6,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8400303721427917,
+    "answer_similarity": 0.6917826533317566
+  },
+  {
+    "variant": "base",
+    "question": "How does a sentence-aware splitter like SentenceSplitter work?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A sentence-aware splitter, such as LlamaIndex's SentenceSplitter, packs whole sentences. [1] Sentence-aware splitting. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 124.5,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8278795480728149,
+    "answer_similarity": 0.6325365900993347
+  },
+  {
+    "variant": "base",
+    "question": "When vectors are normalized to unit length, what does cosine similarity equal?",
+    "type": "factual",
+    "answered": true,
+    "answer": "are normalized to unit length, cosine similarity equals their dot product. [1]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 71.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8899111747741699,
+    "answer_similarity": 0.4493691921234131
+  },
+  {
+    "variant": "base",
+    "question": "How many dimensions does the all-MiniLM-L6-v2 embedding model produce?",
+    "type": "factual",
+    "answered": true,
+    "answer": "fixed by the embedding model, so all chunks in one index must use the same model. [2] The choice should match how the embedding. [5]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 73.5,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.3214925229549408,
+    "answer_similarity": 0.12894468009471893
+  },
+  {
+    "variant": "base",
+    "question": "What is the range of cosine similarity?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The most common similarity measure for text embeddings is cosine similarity, which. [1] Overlap is the number of tokens. [5]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "08_rag_in_italiano.md",
+      "02_chunking.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 83.9,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.49435484409332275,
+    "answer_similarity": 0.4487896263599396
+  },
+  {
+    "variant": "base",
+    "question": "What does the BM25 ranking function score a document by?",
+    "type": "factual",
+    "answered": true,
+    "answer": "BM25 is a ranking function from classical information retrieval that scores a document. [1] returns a relevance score used to sort the candidates. [2]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "05_reranking.md",
+      "04_retrieval.md",
+      "README.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 76.1,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8521096110343933,
+    "answer_similarity": 0.3977974057197571
+  },
+  {
+    "variant": "base",
+    "question": "What is Reciprocal Rank Fusion used for in hybrid search?",
+    "type": "factual",
+    "answered": true,
+    "answer": "common way to merge the two ranked lists is Reciprocal Rank Fusion (RRF), which scores. [1] Hybrid search combines lexical and dense retrieval to get the strengths of both. [1]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "04_retrieval.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 97.9,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5649799108505249,
+    "answer_similarity": 0.7122499942779541
+  },
+  {
+    "variant": "base",
+    "question": "What is a weakness of dense retrieval compared with BM25?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Lexical retrieval with BM25. [2] is fast and is what powers first-stage dense retrieval. [4]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "05_reranking.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 60.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6439719200134277,
+    "answer_similarity": 0.481662780046463
+  },
+  {
+    "variant": "base",
+    "question": "What is the difference between a bi-encoder and a cross-encoder?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A cross-encoder instead feeds the. [1] A bi-encoder embeds the query and each chunk separately and compares their vectors; this. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "03_embeddings.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 67.0,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.47820520401000977,
+    "answer_similarity": 0.8122755289077759
+  },
+  {
+    "variant": "base",
+    "question": "Which evaluation metric does reranking most directly improve?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Why reranking helps evaluation. [1] Reranking most directly improves context precision, because it pushes the truly relevant. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 67.3,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7585436105728149,
+    "answer_similarity": 0.7584195137023926
+  },
+  {
+    "variant": "base",
+    "question": "What dataset is the cross-encoder/ms-marco-MiniLM-L-6-v2 reranker trained on?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The model cross-encoder/ms-marco-MiniLM-L-6-v2 is a widely used cross-encoder reranker. [1] trained on the MS MARCO passage ranking dataset. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 74.6,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7849104404449463,
+    "answer_similarity": 0.6738147139549255
+  },
+  {
+    "variant": "base",
+    "question": "What does faithfulness measure in RAG evaluation?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Evaluating RAG Systems. [1] A RAG evaluation harness reports numbers for retrieval quality and. [2]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 67.8,
+    "correct_guard": true,
+    "context_precision": 0.3333333333333333,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6043093800544739,
+    "answer_similarity": 0.141281858086586
+  },
+  {
+    "variant": "base",
+    "question": "What does answer relevancy measure?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Answer relevancy measures how well the answer addresses the question that was asked. [1] unfaithful answer contains statements the context does not support, which is a. [3]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "05_reranking.md",
+      "06_rag_evaluation.md",
+      "05_reranking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 63.5,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6948562264442444,
+    "answer_similarity": 0.414206862449646
+  },
+  {
+    "variant": "base",
+    "question": "Why does RAGAS raise an error without an OpenAI key, and what is the fix?",
+    "type": "factual",
+    "answered": true,
+    "answer": "error without an OpenAI key; the fix is to configure the judge and embeddings to a local. [1] Plain RAG is now expected, so what differentiates an engineer is measuring whether the. [5]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 60.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6841568946838379,
+    "answer_similarity": 0.7801353931427002
+  },
+  {
+    "variant": "base",
+    "question": "What is HNSW and when is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "synonyms, but it is fast, needs no training, and is a strong baseline. [4] BM25 is a lexical method: it matches exact words and does not understand. [4]",
+    "retrieved_sources": [
+      "README.md",
+      "05_reranking.md",
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 66.8,
+    "correct_guard": true,
+    "context_precision": 0.0,
+    "context_recall": 0.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.14822116494178772,
+    "answer_similarity": 0.2869967222213745
+  },
+  {
+    "variant": "base",
+    "question": "What does pgvector add to PostgreSQL?",
+    "type": "factual",
+    "answered": true,
+    "answer": "pgvector adds vector search to PostgreSQL, which is convenient when the rest of the. [2]",
+    "retrieved_sources": [
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 64.5,
+    "correct_guard": true,
+    "context_precision": 0.9166666666666666,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7810931205749512,
+    "answer_similarity": 0.7794537544250488
+  },
+  {
+    "variant": "base",
+    "question": "Che cos'è il RAG?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [2] Perché usare il RAG. [3]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 58.7,
+    "correct_guard": true,
+    "context_precision": 0.5,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.49899888038635254,
+    "answer_similarity": 0.475540429353714
+  },
+  {
+    "variant": "base",
+    "question": "Che cosa misura la fedeltà di una risposta?",
+    "type": "factual",
+    "answered": true,
+    "answer": "La fedeltà, in inglese faithfulness, misura se la risposta è supportata dal contesto. [3] Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [4]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 68.4,
+    "correct_guard": true,
+    "context_precision": 0.5833333333333333,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5549248456954956,
+    "answer_similarity": 0.6043300032615662
+  },
+  {
+    "variant": "base",
+    "question": "What is the capital of France?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 60.6,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "base",
+    "question": "Who won the 2018 FIFA World Cup?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "02_chunking.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 65.7,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "base",
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "03_embeddings.md",
+      "08_rag_in_italiano.md",
+      "03_embeddings.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 60.3,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "reranked",
+    "question": "What two weaknesses of standalone language models does RAG address?",
+    "type": "factual",
+    "answered": true,
+    "answer": "RAG addresses two core weaknesses of standalone language models: stale knowledge and. [1]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 1436.6,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8469792008399963,
+    "answer_similarity": 0.4863598644733429
+  },
+  {
+    "variant": "reranked",
+    "question": "What are the five stages of a RAG pipeline?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A RAG pipeline has five stages: load documents, split them into chunks, embed the. [1] on the parameters learned during training, a RAG system first retrieves relevant. [3]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "08_rag_in_italiano.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 2134.0,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8086865544319153,
+    "answer_similarity": 0.37506169080734253
+  },
+  {
+    "variant": "reranked",
+    "question": "What is chunk overlap and why is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] Two parameters control chunking: chunk size and chunk overlap. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "05_reranking.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 1151.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7872885465621948,
+    "answer_similarity": 0.737905740737915
+  },
+  {
+    "variant": "reranked",
+    "question": "What chunk size and overlap are a common starting point?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] A common starting point is a chunk size of 1024. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "04_retrieval.md",
+      "02_chunking.md",
+      "02_chunking.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 1211.3,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8400303721427917,
+    "answer_similarity": 0.6917826533317566
+  },
+  {
+    "variant": "reranked",
+    "question": "How does a sentence-aware splitter like SentenceSplitter work?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A sentence-aware splitter, such as LlamaIndex's SentenceSplitter, packs whole sentences. [1] Sentence-aware splitting. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "03_embeddings.md",
+      "02_chunking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 1270.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8278795480728149,
+    "answer_similarity": 0.6325365900993347
+  },
+  {
+    "variant": "reranked",
+    "question": "When vectors are normalized to unit length, what does cosine similarity equal?",
+    "type": "factual",
+    "answered": true,
+    "answer": "are normalized to unit length, cosine similarity equals their dot product. [1]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 1302.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8899111747741699,
+    "answer_similarity": 0.4493691921234131
+  },
+  {
+    "variant": "reranked",
+    "question": "How many dimensions does the all-MiniLM-L6-v2 embedding model produce?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The model cross-encoder/ms-marco-MiniLM-L-6-v2 is a widely used cross-encoder reranker. [2] fixed by the embedding model, so all chunks in one index must use the same model. [3]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "05_reranking.md",
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 1234.0,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.4906560480594635,
+    "answer_similarity": 0.12658384442329407
+  },
+  {
+    "variant": "reranked",
+    "question": "What is the range of cosine similarity?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The most common similarity measure for text embeddings is cosine similarity, which. [1] Overlap is the number of tokens. [5]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "04_retrieval.md",
+      "02_chunking.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 1295.6,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.49435484409332275,
+    "answer_similarity": 0.4487896263599396
+  },
+  {
+    "variant": "reranked",
+    "question": "What does the BM25 ranking function score a document by?",
+    "type": "factual",
+    "answered": true,
+    "answer": "BM25 is a ranking function from classical information retrieval that scores a document. [1] returns a relevance score used to sort the candidates. [4]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "05_reranking.md",
+      "02_chunking.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 1440.3,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8519494533538818,
+    "answer_similarity": 0.40271133184432983
+  },
+  {
+    "variant": "reranked",
+    "question": "What is Reciprocal Rank Fusion used for in hybrid search?",
+    "type": "factual",
+    "answered": true,
+    "answer": "common way to merge the two ranked lists is Reciprocal Rank Fusion (RRF), which scores. [1] Hybrid search combines lexical and dense retrieval to get the strengths of both. [1]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 1199.8,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5649799108505249,
+    "answer_similarity": 0.7122499942779541
+  },
+  {
+    "variant": "reranked",
+    "question": "What is a weakness of dense retrieval compared with BM25?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Lexical retrieval with BM25. [2] is fast and is what powers first-stage dense retrieval. [3]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "05_reranking.md",
+      "04_retrieval.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 1363.9,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6444868445396423,
+    "answer_similarity": 0.4830110967159271
+  },
+  {
+    "variant": "reranked",
+    "question": "What is the difference between a bi-encoder and a cross-encoder?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A cross-encoder instead feeds the. [1] A bi-encoder embeds the query and each chunk separately and compares their vectors; this. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 1263.9,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.47820520401000977,
+    "answer_similarity": 0.8122755289077759
+  },
+  {
+    "variant": "reranked",
+    "question": "Which evaluation metric does reranking most directly improve?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Why reranking helps evaluation. [1] Reranking most directly improves context precision, because it pushes the truly relevant. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "06_rag_evaluation.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 1269.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7585436105728149,
+    "answer_similarity": 0.7584195137023926
+  },
+  {
+    "variant": "reranked",
+    "question": "What dataset is the cross-encoder/ms-marco-MiniLM-L-6-v2 reranker trained on?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The model cross-encoder/ms-marco-MiniLM-L-6-v2 is a widely used cross-encoder reranker. [1] trained on the MS MARCO passage ranking dataset. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "03_embeddings.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 1399.5,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7849104404449463,
+    "answer_similarity": 0.6738147139549255
+  },
+  {
+    "variant": "reranked",
+    "question": "What does faithfulness measure in RAG evaluation?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A RAG evaluation harness reports numbers for retrieval quality and. [2] Evaluating RAG Systems. [4]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 1769.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5830965638160706,
+    "answer_similarity": 0.12811344861984253
+  },
+  {
+    "variant": "reranked",
+    "question": "What does answer relevancy measure?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Answer relevancy measures how well the answer addresses the question that was asked. [1] unfaithful answer contains statements the context does not support, which is a. [2]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "05_reranking.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 1299.8,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6975045204162598,
+    "answer_similarity": 0.41662856936454773
+  },
+  {
+    "variant": "reranked",
+    "question": "Why does RAGAS raise an error without an OpenAI key, and what is the fix?",
+    "type": "factual",
+    "answered": true,
+    "answer": "error without an OpenAI key; the fix is to configure the judge and embeddings to a local. [1]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 1290.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.530685305595398,
+    "answer_similarity": 0.6990823149681091
+  },
+  {
+    "variant": "reranked",
+    "question": "What is HNSW and when is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "synonyms, but it is fast, needs no training, and is a strong baseline. [4] BM25 is a lexical method: it matches exact words and does not understand. [4]",
+    "retrieved_sources": [
+      "07_vector_databases.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "04_retrieval.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 1147.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.14822116494178772,
+    "answer_similarity": 0.2869967222213745
+  },
+  {
+    "variant": "reranked",
+    "question": "What does pgvector add to PostgreSQL?",
+    "type": "factual",
+    "answered": true,
+    "answer": "pgvector adds vector search to PostgreSQL, which is convenient when the rest of the. [1]",
+    "retrieved_sources": [
+      "07_vector_databases.md",
+      "04_retrieval.md",
+      "01_what_is_rag.md",
+      "07_vector_databases.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 1439.9,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7794744968414307,
+    "answer_similarity": 0.7769832015037537
+  },
+  {
+    "variant": "reranked",
+    "question": "Che cos'è il RAG?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [1] Perché usare il RAG. [2]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 1507.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.4864714741706848,
+    "answer_similarity": 0.47459742426872253
+  },
+  {
+    "variant": "reranked",
+    "question": "Che cosa misura la fedeltà di una risposta?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [1] La fedeltà, in inglese faithfulness, misura se la risposta è supportata dal contesto. [2]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 1291.2,
+    "correct_guard": true,
+    "context_precision": 0.5833333333333333,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.3986697196960449,
+    "answer_similarity": 0.494819313287735
+  },
+  {
+    "variant": "reranked",
+    "question": "What is the capital of France?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "06_rag_evaluation.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 1332.0,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "reranked",
+    "question": "Who won the 2018 FIFA World Cup?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "02_chunking.md",
+      "08_rag_in_italiano.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 1401.2,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "reranked",
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "05_reranking.md",
+      "02_chunking.md",
+      "06_rag_evaluation.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 1324.7,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "hybrid",
+    "question": "What two weaknesses of standalone language models does RAG address?",
+    "type": "factual",
+    "answered": true,
+    "answer": "RAG addresses two core weaknesses of standalone language models: stale knowledge and. [1]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "03_embeddings.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 73.1,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8469792008399963,
+    "answer_similarity": 0.4863598644733429
+  },
+  {
+    "variant": "hybrid",
+    "question": "What are the five stages of a RAG pipeline?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A RAG pipeline has five stages: load documents, split them into chunks, embed the. [1] Because the corpus can be updated independently of the model, RAG keeps. [4]",
+    "retrieved_sources": [
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "README.md"
+    ],
+    "gold_sources": [
+      "01_what_is_rag.md"
+    ],
+    "latency_ms": 64.6,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.769263744354248,
+    "answer_similarity": 0.4511662721633911
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is chunk overlap and why is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] Two parameters control chunking: chunk size and chunk overlap. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "05_reranking.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 78.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7872885465621948,
+    "answer_similarity": 0.737905740737915
+  },
+  {
+    "variant": "hybrid",
+    "question": "What chunk size and overlap are a common starting point?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Chunk size and overlap. [1] A common starting point is a chunk size of 1024. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "02_chunking.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 67.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8400303721427917,
+    "answer_similarity": 0.6917826533317566
+  },
+  {
+    "variant": "hybrid",
+    "question": "How does a sentence-aware splitter like SentenceSplitter work?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A sentence-aware splitter, such as LlamaIndex's SentenceSplitter, packs whole sentences. [1] Sentence-aware splitting. [1]",
+    "retrieved_sources": [
+      "02_chunking.md",
+      "02_chunking.md",
+      "07_vector_databases.md",
+      "03_embeddings.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "02_chunking.md"
+    ],
+    "latency_ms": 65.3,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8278795480728149,
+    "answer_similarity": 0.6325365900993347
+  },
+  {
+    "variant": "hybrid",
+    "question": "When vectors are normalized to unit length, what does cosine similarity equal?",
+    "type": "factual",
+    "answered": true,
+    "answer": "are normalized to unit length, cosine similarity equals their dot product. [1]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "03_embeddings.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 67.4,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8899111747741699,
+    "answer_similarity": 0.4493691921234131
+  },
+  {
+    "variant": "hybrid",
+    "question": "How many dimensions does the all-MiniLM-L6-v2 embedding model produce?",
+    "type": "factual",
+    "answered": true,
+    "answer": "fixed by the embedding model, so all chunks in one index must use the same model. [2] The choice should match how the embedding. [3]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "05_reranking.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 74.8,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.3207310438156128,
+    "answer_similarity": 0.12592428922653198
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is the range of cosine similarity?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The most common similarity measure for text embeddings is cosine similarity, which. [1] Overlap is the number of tokens. [3]",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "07_vector_databases.md",
+      "02_chunking.md",
+      "07_vector_databases.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [
+      "03_embeddings.md"
+    ],
+    "latency_ms": 79.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.49121466279029846,
+    "answer_similarity": 0.4448343515396118
+  },
+  {
+    "variant": "hybrid",
+    "question": "What does the BM25 ranking function score a document by?",
+    "type": "factual",
+    "answered": true,
+    "answer": "BM25 is a ranking function from classical information retrieval that scores a document. [1] returns a relevance score used to sort the candidates. [2]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "05_reranking.md",
+      "04_retrieval.md",
+      "README.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 72.0,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.8521096110343933,
+    "answer_similarity": 0.3977974057197571
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is Reciprocal Rank Fusion used for in hybrid search?",
+    "type": "factual",
+    "answered": true,
+    "answer": "common way to merge the two ranked lists is Reciprocal Rank Fusion (RRF), which scores. [1] Vector stores let you choose the distance metric used for search, commonly cosine. [5]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "05_reranking.md",
+      "07_vector_databases.md",
+      "04_retrieval.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 82.8,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.5146903395652771,
+    "answer_similarity": 0.6471001505851746
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is a weakness of dense retrieval compared with BM25?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Lexical retrieval with BM25. [1] is fast and is what powers first-stage dense retrieval. [4]",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "04_retrieval.md",
+      "05_reranking.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [
+      "04_retrieval.md"
+    ],
+    "latency_ms": 69.0,
+    "correct_guard": true,
+    "context_precision": 0.5,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6353095769882202,
+    "answer_similarity": 0.479786217212677
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is the difference between a bi-encoder and a cross-encoder?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A cross-encoder instead feeds the. [1] A bi-encoder embeds the query and each chunk separately and compares their vectors; this. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 102.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.47820520401000977,
+    "answer_similarity": 0.8122755289077759
+  },
+  {
+    "variant": "hybrid",
+    "question": "Which evaluation metric does reranking most directly improve?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Why reranking helps evaluation. [1] Reranking most directly improves context precision, because it pushes the truly relevant. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "06_rag_evaluation.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 100.9,
+    "correct_guard": true,
+    "context_precision": 0.75,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7585436105728149,
+    "answer_similarity": 0.7584195137023926
+  },
+  {
+    "variant": "hybrid",
+    "question": "What dataset is the cross-encoder/ms-marco-MiniLM-L-6-v2 reranker trained on?",
+    "type": "factual",
+    "answered": true,
+    "answer": "The model cross-encoder/ms-marco-MiniLM-L-6-v2 is a widely used cross-encoder reranker. [1] trained on the MS MARCO passage ranking dataset. [1]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "05_reranking.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "05_reranking.md"
+    ],
+    "latency_ms": 81.8,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7849104404449463,
+    "answer_similarity": 0.6738147139549255
+  },
+  {
+    "variant": "hybrid",
+    "question": "What does faithfulness measure in RAG evaluation?",
+    "type": "factual",
+    "answered": true,
+    "answer": "A RAG evaluation harness reports numbers for retrieval quality and. [2] La fedeltà, in inglese faithfulness, misura se la risposta è supportata dal contesto. [3]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "08_rag_in_italiano.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 70.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6176273822784424,
+    "answer_similarity": 0.19989433884620667
+  },
+  {
+    "variant": "hybrid",
+    "question": "What does answer relevancy measure?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Answer relevancy measures how well the answer addresses the question that was asked. [1] When the retrieved context does not contain the answer, the system should say. [4]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "03_embeddings.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 101.0,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7474653124809265,
+    "answer_similarity": 0.45572561025619507
+  },
+  {
+    "variant": "hybrid",
+    "question": "Why does RAGAS raise an error without an OpenAI key, and what is the fix?",
+    "type": "factual",
+    "answered": true,
+    "answer": "error without an OpenAI key; the fix is to configure the judge and embeddings to a local. [1] Plain RAG is now expected, so what differentiates an engineer is measuring whether the. [2]",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "01_what_is_rag.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "06_rag_evaluation.md"
+    ],
+    "latency_ms": 93.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.6829500794410706,
+    "answer_similarity": 0.7846448421478271
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is HNSW and when is it used?",
+    "type": "factual",
+    "answered": true,
+    "answer": "synonyms, but it is fast, needs no training, and is a strong baseline. [2] answer quality, and shows a measurable improvement when a component is upgraded. [5]",
+    "retrieved_sources": [
+      "05_reranking.md",
+      "04_retrieval.md",
+      "07_vector_databases.md",
+      "06_rag_evaluation.md",
+      "06_rag_evaluation.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 110.0,
+    "correct_guard": true,
+    "context_precision": 0.3333333333333333,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.11881328374147415,
+    "answer_similarity": 0.20247527956962585
+  },
+  {
+    "variant": "hybrid",
+    "question": "What does pgvector add to PostgreSQL?",
+    "type": "factual",
+    "answered": true,
+    "answer": "pgvector adds vector search to PostgreSQL, which is convenient when the rest of the. [2]",
+    "retrieved_sources": [
+      "07_vector_databases.md",
+      "07_vector_databases.md",
+      "03_embeddings.md",
+      "05_reranking.md",
+      "README.md"
+    ],
+    "gold_sources": [
+      "07_vector_databases.md"
+    ],
+    "latency_ms": 115.7,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7810931205749512,
+    "answer_similarity": 0.7794537544250488
+  },
+  {
+    "variant": "hybrid",
+    "question": "Che cos'è il RAG?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [1] Perché usare il RAG. [2]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 99.2,
+    "correct_guard": true,
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.4864714741706848,
+    "answer_similarity": 0.47459742426872253
+  },
+  {
+    "variant": "hybrid",
+    "question": "Che cosa misura la fedeltà di una risposta?",
+    "type": "factual",
+    "answered": true,
+    "answer": "Il Retrieval-Augmented Generation (RAG) è una tecnica che àncora la risposta di un. [2] La fedeltà, in inglese faithfulness, misura se la risposta è supportata dal contesto. [4]",
+    "retrieved_sources": [
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md",
+      "08_rag_in_italiano.md"
+    ],
+    "gold_sources": [
+      "08_rag_in_italiano.md"
+    ],
+    "latency_ms": 93.6,
+    "correct_guard": true,
+    "context_precision": 0.41666666666666663,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.401401162147522,
+    "answer_similarity": 0.49810510873794556
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is the capital of France?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "04_retrieval.md",
+      "06_rag_evaluation.md",
+      "README.md",
+      "02_chunking.md",
+      "07_vector_databases.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 90.8,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "hybrid",
+    "question": "Who won the 2018 FIFA World Cup?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "06_rag_evaluation.md",
+      "01_what_is_rag.md",
+      "05_reranking.md",
+      "01_what_is_rag.md",
+      "04_retrieval.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 95.7,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  },
+  {
+    "variant": "hybrid",
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "type": "negative",
+    "answered": false,
+    "answer": "I couldn't find an answer to that in the provided documents.",
+    "retrieved_sources": [
+      "03_embeddings.md",
+      "02_chunking.md",
+      "03_embeddings.md",
+      "03_embeddings.md",
+      "README.md"
+    ],
+    "gold_sources": [],
+    "latency_ms": 121.0,
+    "correct_guard": true,
+    "context_precision": null,
+    "context_recall": null,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "answer_similarity": null
+  }
+]
