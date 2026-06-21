@@ -168,7 +168,7 @@ eval/
   run_eval.py      # base vs upgraded harness -> metrics table + artifacts
 app.py             # Gradio UI: question, toggles, cited answer, latency
 data/corpus/       # original MIT-licensed sample docs (+ fetch script for real PDFs)
-tests/             # 27 hermetic tests (ingest, retrieval, citations, guard, metrics)
+tests/             # 44 hermetic tests (ingest, retrieval, citations, guard, metrics, textutil)
 ```
 
 ## How the evaluation works
@@ -232,3 +232,7 @@ app_file: app.py
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+*Built by [Mojtaba Alehosseini](https://github.com/Mojtaba-Alehosseini) — data scientist.*
